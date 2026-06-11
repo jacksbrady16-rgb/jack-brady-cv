@@ -473,6 +473,28 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .role-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 48px;
+    }
+    .role-chip {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid rgba(79,142,247,0.25);
+      border-radius: 20px;
+      padding: 7px 18px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .role-chip:hover {
+      background: rgba(79,142,247,0.2);
+      border-color: var(--accent);
+    }
     .contact-details {
       display: flex;
       justify-content: center;
@@ -823,7 +845,16 @@
 <section class="contact-section" id="contact">
   <div class="section-label fade-in" style="justify-content:center;display:flex;">Get in touch</div>
   <h2 class="section-title fade-in" style="text-align:center;">Contact</h2>
-  <p class="contact-cta fade-in">Open to graduate roles, internships, and early-career opportunities across financial services, technology, and client-facing functions.</p>
+  <p class="contact-cta fade-in">Open to graduate roles and early-career opportunities across a range of business-oriented functions.</p>
+  <div class="role-chips fade-in">
+    <span class="role-chip">Financial Services</span>
+    <span class="role-chip">Marketing</span>
+    <span class="role-chip">Technology</span>
+    <span class="role-chip">Audit</span>
+    <span class="role-chip">Business Development</span>
+    <span class="role-chip">Client-Facing</span>
+    <span class="role-chip">Strategy &amp; Consulting</span>
+  </div>
   <div class="contact-details fade-in">
     <div class="contact-item">
       <span class="contact-item-label">Email</span>
